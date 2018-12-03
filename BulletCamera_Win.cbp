@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BulletCamera" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProgDebug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProgRelease" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_DYNAMIC" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/include" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/include/bullet" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="glew32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="BulletLibrary" />
+			<Add library="freeglut" />
+			<Add library="freetype" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/lib" />
+		</Linker>
+		<Unit filename="Cube.cpp" />
+		<Unit filename="Cube.h" />
+		<Unit filename="FragmentCubeMap.glsl" />
+		<Unit filename="GraphicsEngine.cpp" />
+		<Unit filename="GraphicsEngine.h" />
+		<Unit filename="Light.cpp" />
+		<Unit filename="Light.h" />
+		<Unit filename="LoadShaders.cpp" />
+		<Unit filename="LoadShaders.h" />
+		<Unit filename="Material.cpp" />
+		<Unit filename="Material.h" />
+		<Unit filename="MaterialPresets.h" />
+		<Unit filename="Models.cpp" />
+		<Unit filename="Models.h" />
+		<Unit filename="PhongMultipleLights.glsl" />
+		<Unit filename="PhongMultipleLightsAndTexture.glsl" />
+		<Unit filename="ProgramDefines.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Shape.cpp" />
+		<Unit filename="Shape.h" />
+		<Unit filename="SimpleTexture.glsl" />
+		<Unit filename="SphericalCamera.cpp" />
+		<Unit filename="SphericalCamera.h" />
+		<Unit filename="SupportFunctions.cpp" />
+		<Unit filename="SupportFunctions.h" />
+		<Unit filename="TextRendererTTF.cpp" />
+		<Unit filename="TextRendererTTF.h" />
+		<Unit filename="TypedRigidBody.cpp" />
+		<Unit filename="TypedRigidBody.h" />
+		<Unit filename="UI.cpp" />
+		<Unit filename="UI.h" />
+		<Unit filename="VertexShaderBasicTexture.glsl" />
+		<Unit filename="VertexShaderCubeMap.glsl" />
+		<Unit filename="VertexShaderLighting.glsl" />
+		<Unit filename="VertexShaderLightingTexture.glsl" />
+		<Unit filename="btModels.cpp" />
+		<Unit filename="btModels.h" />
+		<Unit filename="btYPRCamera.cpp" />
+		<Unit filename="btYPRCamera.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
